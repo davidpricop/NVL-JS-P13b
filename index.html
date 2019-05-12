@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NVL-JS-P13b</title>
+</head>
+<body>
+    <script>
+        function pali(word) {
+            if(word.length<=5){
+                if(word.length == 2){
+                    if(word.slice(0,1) == word.slice(1)){
+                        alert("Es una palabra palíndromo: "+word)      
+                    } else {
+                        alert("no es una palabra palíndromo");
+                    }
+                }else {
+                    if(word.length == 3){
+                        if(word.slice(0,1) == word.slice(2)){
+                            alert("Es una palabra palíndromo: "+word)      
+                        } else {
+                            alert("no es una palabra palíndromo");
+                        }
+                    }
+                }
+            }else {
+                alert("Debe tener 3 o menos de letras la palabra");
+            }
+        }
+
+        var palabra = prompt("Introduce una palabra para detecta si es palíndromo, maximo 3 letras:" );
+
+        pali(palabra);
+    </script>
+</body>
+</html>
